@@ -79,16 +79,117 @@ main .main__title{
     padding-right: 25%;
     text-align: center;
 }
-main .main__button button{
+main .main__button a{
     background-color: var(--color-oscuro);
+    font-size: 2rem;
     color: white;
-    height: 50px;
-    width: 100px;
     font-family: 'Inconsolata', monospace;
-    margin-left: calc(50% - 50px);
+    margin-left: calc(50% - 100px);
+    border-radius: 40px;
+    padding: 20px;
+    text-decoration: none;
 }
-main .main__button button:hover{
+main .main__button a:hover{
     background-color: var(--color-claro);
     transform: scale(1.1);
     cursor: pointer;
+}
+.principal{
+    background-color: var(--color-alterno);
+    height: 380px;
+}
+.article, .otros__detalle{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.article h2{
+    padding-top: 20px;
+}
+.article .article__contenidos{
+    display: flex;
+    justify-content: space-evenly;
+}
+.article .article__imagen img{
+    width: 500px;
+}
+.article__descripcion{
+    margin-left: 50px;
+}
+.article__descripcion-titulo{
+    font-size: 2rem;
+}
+.article__descripcion-parrafo{
+    font-size: 1rem;
+}
+.article__descripcion a{
+    color: var(--color-alterno);
+    font-size: .9rem;
+    background-color: var(--color-claro);
+    padding: 10px;
+}
+.otros{
+    background-color: var(--color-oscuro);
+    color: var(--color-alterno);
+    padding-bottom: 20px;
+}
+.otros__detalle > p{
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 0;
+}
+.otros .otros__articulo{
+    margin-top: 15px;
+
+    margin-right: 15px;
+    max-width: 310px;
+    height: 390px;
+    padding: 15px;
+    /* border: 1px solid red; */
+    box-shadow: 7px 7px 5px black;
+    background-color: var(--color-claro);
+}
+.otros_detalles-articulos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.otros .otros__detalle-titulo{
+    font-size: .9rem;
+    font-weight: bold;
+}
+.otros .otros__detalle-parrafo{
+    font-size: .7rem;
+    line-height: 1.5em;
+}
+.otros .otros__articulo img{
+    max-width: 300px;
+    height: 200px;
+}
+.otros .otros__articulo a{
+    background-color: var(--color-alterno);
+    font-size: .7rem;
+    color:var(--color-claro);
+    font-family: 'Inconsolata', monospace;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    display: table-cell;
+    vertical-align: bottom;  
+}
+.otros .otros__articulo a:hover{
+    background-color: white;
+    cursor: pointer;
+}
+footer{
+    background-color: var(--color-alterno);
+    height: 40px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 20px solid var(--color-principal);
+}
+footer a{
+    color: var(--color-oscuro);
 }
