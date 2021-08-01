@@ -57,6 +57,7 @@ nav{
 nav .nav__logo{
     margin-top: 10px;
     margin-left: 50px;
+    margin-bottom: 10px;
 }
 nav .nav__logo img{
     width: 220px;
@@ -98,7 +99,7 @@ main .main__button a:hover{
     background-color: var(--color-alterno);
     height: 380px;
 }
-.article, .otros__detalle{
+.article, .otros__detalle,.blog-principal__contenido{
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
@@ -141,7 +142,6 @@ main .main__button a:hover{
 }
 .otros .otros__articulo{
     margin-top: 15px;
-
     margin-right: 15px;
     max-width: 310px;
     height: 390px;
@@ -181,6 +181,88 @@ main .main__button a:hover{
     background-color: white;
     cursor: pointer;
 }
+.blog-princial{
+    background-color: var(--color-alterno);
+    padding-bottom: 20px;
+}
+.blog-princial .blog-princial__imagen img{
+    max-width: 100%;
+    padding-top: 20px;
+}
+.blog-princial hr{
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+} 
+.blog-princial h3{
+    margin-left: 10%;
+} 
+.blog-principal__titulo{
+    margin-left: 10%;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.blog-principal__contenido p{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1rem;
+    line-height: 1.5em;
+}
+.blog-principal__contenido iframe{
+    margin-left: calc(50% - 280px);
+}
+.contacto{
+    width: 60%;
+    padding-left: 21%;
+    padding-right: 20%;
+    background-color: var(--color-claro);
+    color: var(--color-alterno);
+    display: flex;
+    justify-content: space-between;
+}
+.contacto__1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    width: 50%;
+}
+.contacto__1-detalle,.contacto__2-detalle h3{
+    font-size: 1.2rem;
+    margin-left: 20px;
+}
+.contacto__1-detalle,.contacto__2-detalle p{
+    font-size: .8rem;
+    margin-left: 20px;
+}
+.contacto img{
+    width: 100px;
+}
+.contacto__2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    width: 50%;
+}
+.sobre-mi{
+    background-color: var(--color-alterno);
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 1rem;
+}
+.descripcion h3{
+    font-size: 1.4rem;
+}
+.sobre-mi img{
+    width: 30%;
+    margin-right: 50px;
+    border-radius: 30px;
+}
+
+
 footer{
     background-color: var(--color-alterno);
     height: 40px;
