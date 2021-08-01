@@ -12,6 +12,7 @@ body{
     background-image: url(https://i.ytimg.com/vi/Uq7kyf1T_lk/maxresdefault.jpg);
 }
 a{
+    
     text-decoration: none;
     display: inline;
     color: var(--color-alterno);
